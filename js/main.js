@@ -49,6 +49,12 @@ function undoChoice(){
 //  3. It should invoke the `updatePage()` function (and give it the
 //     `currentPage` object as a parameter).
 
+function changePage(slug){
+    // Record last choice    
+    recordChoice(slug);
+    currentPage = getCurrentPage(slug)
+    updatePage(currentPage)
+}
 
 
 ///////////////////////////////////////////////////

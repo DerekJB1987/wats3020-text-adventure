@@ -52,8 +52,8 @@ function undoChoice(){
 function changePage(slug){
     // Record last choice    
     recordChoice(slug);
-    currentPage = getCurrentPage(slug)
-    updatePage(currentPage)
+    currentPage = getCurrentPage(slug);
+    updatePage(currentPage);
 }
 
 

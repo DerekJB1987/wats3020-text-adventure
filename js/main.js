@@ -17,8 +17,8 @@ playerName = prompt("what is your name?");
 // parameter, which is the `slug` for the current page. This function will fetch
 // the current page and return a page object using the `slug` value for a key.
 
-function getCurrentPage{
-    currentPage = storyData[slug]
+function getCurrentPage(slug){
+    currentPage = storyData[slug];
     return currentPage;
 }
 

@@ -26,7 +26,7 @@ function getCurrentPage(slug){
 // parameter and add it to the `choiceList` Array (probably using `push()`).
 
 function recordChoice(slug){
-    choiceList.push(slug)
+    choiceList.push(slug);
     console.log('added ${slug} to choiceList array');
 }
 

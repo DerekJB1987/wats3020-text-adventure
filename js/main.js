@@ -27,7 +27,7 @@ function getCurrentPage(slug){
 
 function recordChoice(slug){
     choiceList.push(slug);
-    console.log('added ${slug} to choiceList array');
+    console.log('added ${slug} to choiceList array.');
 }
 
 // TODO: Create a function called `undoChoice()` that will remove the last
@@ -36,7 +36,7 @@ function recordChoice(slug){
 
 function undoChoice(){
     choiceList.pop(); // Remove the former item in the choiceList Array
-    console.log('Return to previous page');
+    console.log('Return to previous page.');
     return choiceList[choiceList.length-1];
 }
 
@@ -261,7 +261,7 @@ function addEventListeners(){
         choice.addEventListener('click', function(e){
             console.log(`Moving to page: ${e.target.dataset.slug}`);
             changePage(e.target.dataset.slug);
-        })
+        });
     }
 }
 
@@ -271,9 +271,9 @@ undo.addEventListener('click', function(e){
     let slug = undoChoice();
     currentPage = getCurrentPage(slug);
     updatePage(currentPage);
-})
+});
 
 currentPage = storyData.p1;
-recordChoice(p1);
+recordChoice('p1');
 updatePage(currentPage);
 

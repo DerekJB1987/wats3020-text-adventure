@@ -11,7 +11,7 @@ let currentPage = null;
 
 // TODO: Prompt the user for their name. Store the name in the variable `playerName`.
 
-playerName = prompt("what is your name?");
+playerName = prompt("What is your name?");
 
 // TODO: Create a function called `getCurrentPage()`. It should accept one
 // parameter, which is the `slug` for the current page. This function will fetch
